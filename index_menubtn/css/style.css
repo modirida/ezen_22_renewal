@@ -1,0 +1,311 @@
+@charset "UTF-8";
+
+/*reset*/
+body,h3,div,p,ul,li,a,input,label,header,section,footer{margin:0;padding:0;box-sizing:border-box;}
+ol,ul,li{list-style:none;}
+a{text-decoration:none; color:#000;}
+body{
+    font: normal 14px/1.5em arial,sans-serif;
+    /* overflow-x: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    /* background: url(../img/9897ffeef9f9a29ae955b80214bbaac1.jpg) no-repeat;
+    background-size: cover; */
+    background: #707960;
+}
+h3{display:none;}
+
+.video_bg_wrap video{
+    position: fixed;
+    top:0; left:0;
+    min-width: 100%; min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -99999;
+}
+/*wrap*/
+#wrap{
+    width: 1920px; height: 2160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+                                                    z-index: -99998;
+}
+
+/*header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px; height: 100px;
+    background: rgba(17,57,24,0.7);
+    border-radius: 20px;
+                                                    position: absolute; top: 80px;
+                                                    z-index: -9995;
+}
+header .logowrap{
+    margin-left: 30px;
+    margin-top: 8px;
+}
+header .fa-solid{
+    margin-right: 50px;
+}
+header .fa-solid:hover{
+    fill: #eee;
+    cursor: pointer;
+}
+.head_shadow{
+    width: 1100px; height: 120px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 20px;
+                                                    position: absolute; top: 80px;
+                                                    z-index: -9997;
+}
+
+.logowrap img{
+    padding: 20px;
+}
+
+/*section*/
+section{
+    width: 1920px; height: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sec1{
+    width: 1300px; height: 700px;
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #fff;                                                                                  
+                                                    position: relative;
+                                                    z-index: -9997;    
+}
+.sec_shadow1{
+    width: 1300px; height: 700px;
+    border-radius: 50px;
+    background: rgba(0,0,0,0.1);
+                                                    position: absolute; top: 240px;
+                                                    z-index: -9998;
+}
+#itemwrap1{
+    width: 1300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#itemwrap1 .item1, #itemwrap1 .item2{
+    width: 430px;
+    height: 450px;
+    background-color: #fff;
+    border: 5px solid rgba(98,123,82,0.8); /*border: 5px solid rgba(17,57,24,0.8);*/
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-flow: row wrap;
+}
+#itemwrap1 .item1 img{width: 400px; height: 245px; margin-top: 20px;} /*이미지의 height 비율계산 필요*/
+#itemwrap1 .item2 img{width: 400px; height: 300px; margin-top: 20px;} /*이미지의 height 비율계산 필요*/
+#itemwrap1 .item1 p{
+    width: 400px;
+    margin-bottom: 20px;
+}
+#itemwrap1 .item2 p{
+    width: 400px;
+    margin-bottom: 20px;
+}
+#sec1 #itemwrap1 .item1_shadow{
+    width: 430px; height: 450px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.1);
+                                                    position: absolute; top: 145px; left: 165px;
+                                                    z-index: -1;
+}
+#sec1 #itemwrap1 .item2_shadow{
+    width: 430px; height: 450px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.1);
+                                                    position: absolute; top: 145px; right: 130px;
+                                                    z-index: -1;
+}
+
+/*sec2*/
+#sec2{
+    width: 1300px; height: 700px;
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #fff;
+                                                    position: relative;
+                                                    z-index: -9998;
+}
+.sec_shadow2{
+    width: 1300px; height: 700px;
+    border-radius: 50px;
+    background: rgba(0,0,0,0.1);
+                                                    position: absolute; top: 1320px;
+                                                    z-index: -9999;
+}
+#itemwrap2{
+    width: 1300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#itemwrap2 .item3, #itemwrap2 .item4{
+    width: 430px;
+    height: 450px;
+    background-color: #fff;
+    border: 5px solid rgba(98,123,82,0.8); /*border: 5px solid rgba(17,57,24,0.8);*/
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-flow: row wrap;
+}
+#itemwrap2 .item3 img{width: 400px; height: 245px; margin-top: 20px;} /*이미지의 height 비율계산 필요*/
+#itemwrap2 .item4 img{width: 400px; height: 300px; margin-top: 20px;} /*이미지의 height 비율계산 필요*/
+#itemwrap2 .item3 p{
+    width: 400px;
+    margin-bottom: 20px;
+}
+#itemwrap2 .item4 p{
+    width: 400px;
+    margin-bottom: 20px;
+}
+#sec2 #itemwrap2 .item3_shadow{
+    width: 430px; height: 450px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.1);
+    position: absolute;
+    top: 145px;
+    left: 165px;
+                                                    z-index: -1;
+}
+#sec2 #itemwrap2 .item4_shadow{
+    width: 430px; height: 450px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.1);
+    position: absolute;
+    top: 145px;
+    right: 130px;
+                                                    z-index: -1;
+}
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+}
+
+/* icon color */
+.fa-bars{color:#fff;}
+.fa-bars:hover{color:#eee;}
+.fa-brands{color:rgb(17,57,24); font-size: 30px; padding: 10px;}
+.fa-brands:hover{color:#eee;}
+
+
+/*모바일 최적화*/
+@media(max-width: 768px){
+    #wrap{
+        width: 768px;
+        font-size: 12px;
+    }   
+}
+
+/* section 생성에 따른 position 변경, 1080 height 마다 한 페이지가 되게 구성, 밖으로 나간 아이콘들 묶어주기? */
+/* 다른 페이지 하나 더 연결? */
+/* 홈페이지 배경 글래스모피즘? 리소그래피? better simpler */
+/* https://freefrontend.com/css-fullscreen-menus/ 햄버거메뉴 적용중.. */
+/* 나중에 body {overflow-x:hidden 적용해야합니다} */
+  
+.hmenu_container{
+    position:relative;
+}
+  .menu_overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    color: #fff;
+    background: #999;               
+    transform: translateX(110%);
+    transition: transform 0.5s ease;
+    z-index: 100; 
+  }
+  
+  .menu_overlay .fas {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 2.5rem;
+    transition: all 0.3s ease;
+  }
+  .menu_overlay .fas:hover {
+    color: #4b134f;
+    transform: scale(1.1) rotate(180deg);
+  }
+  
+  .menu_overlay ul {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    padding: 20px;
+    margin-left: 50px;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .menu_overlay a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu_overlay a:hover {
+    color: #fff;
+  }
+  
+  #menuBtn {
+    display: none;
+  }
+  
+  #menuBtn:checked ~ .menu_overlay {
+    transform: translateX(-78%);                                  /* 조정필요 */
+  }
+  
+  .landing_page {
+    max-height: 100vh;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  
+  .menu {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  
+  .fas {
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .fas:hover {
+    color: #ccc;
+  }
